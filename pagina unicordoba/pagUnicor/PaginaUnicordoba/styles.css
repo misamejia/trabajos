@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.fusion-secondary-header {
+    background-color: #ffffff; 
+    padding: 10px 0;
+}
+.barra-horizontal {
+    height: 3px; 
+    background-color: #205e0e; 
+    margin: 5px 0; 
+}
+
+.fusion-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+
+.fusion-secondary-menu .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fusion-secondary-menu .menu li {
+    display: inline;
+    margin-right: 20px; 
+}
+
+.fusion-secondary-menu .menu li a {
+    text-decoration: none;
+    color: #205e0e; 
+    transition: color 0.3s;
+}
+
+.fusion-secondary-menu .menu li a:hover {
+    color: #205e0e; 
+}
+
+.fusion-social-links-header {
+    display: flex;
+    gap: 10px; 
+}
+
+.fusion-social-links-header a {
+    text-decoration: none;
+    color: #333; 
+}
+
+.fusion-secondary-menu2 .menu2 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fusion-secondary-menu2 .menu2 li {
+    display: inline;
+    margin-right: 35px;
+}
+
+.fusion-secondary-menu2 .menu2 li a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s;
+}
+
+.fusion-secondary-menu2 .menu2 li a:hover {
+    color: #000000; 
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0 10px;
+}
+
+ul img {
+    width: 90px;
+    height: auto;
+}
+
+ul p {
+    margin: 4px 0 0 0;
+}

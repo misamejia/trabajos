@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videojuegos</title>
+    <style>
+        /* Estilos generales */
+        body {
+            display: grid;
+            grid-template-areas: 
+                "header header" 
+                "sidebar content" 
+                "footer footer";
+            grid-template-rows: 100px 1fr 60px;
+            grid-template-columns: 250px 1fr;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #1a1a2e, #16213e, #0f3460);
+            color: white;
+        }
+
+        /* Encabezado */
+        header {
+            grid-area: header;
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Menú de navegación */
+        nav {
+            grid-area: sidebar;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-right: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 5px 0;
+            display: block;
+            width: 100%;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background: #00a8ff;
+            transform: scale(1.1);
+            box-shadow: 0px 0px 10px rgba(0, 168, 255, 0.7);
+        }
+
+        /* Contenido principal */
+        main {
+            grid-area: content;
+            padding: 30px;
+            text-align: center;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        main h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 168, 255, 0.7);
+        }
+
+        main p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Pie de página */
+        footer {
+            grid-area: footer;
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        🎮 Mundo Gamer: Explora el Universo de los Videojuegos 🚀
+    </header>
+    <nav>
+        <a href="historia.html">📜 Historia</a>
+        <a href="juegos_populares.html">🔥 Juegos Populares</a>
+        <a href="plataformas.html">🎮 Plataformas</a>
+        <a href="generos.html">🎭 Géneros</a>
+        <a href="compañias.html">🏢 Desarrolladoras</a>
+        <a href="impacto.html">🌍 Impacto</a>
+        <a href="competencias.html">🏆 eSports</a>
+        <a href="realidad_virtual.html">🕶️ Realidad Virtual</a>
+        <a href="futuro.html">🔮 Futuro</a>
+        <a href="contacto.html">📩 Contacto</a>
+    </nav>
+    <main>
+        <h2>Bienvenido al Portal Gamer</h2>
+        <p>Descubre el fascinante mundo de los videojuegos. Desde su historia hasta el futuro, exploramos cómo esta industria ha cambiado el entretenimiento para siempre.</p>
+    </main>
+    <footer>
+        &copy; 2025 Mundo Gamer - Todos los derechos reservados.
+    </footer>
+</body>
+</html>

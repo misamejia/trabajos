@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videojuegos - Audio en la Página</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            display: grid;
+            grid-template-areas: "header header" "sidebar content" "footer footer";
+            grid-template-rows: 80px 1fr 50px;
+            grid-template-columns: 250px 1fr;
+            width: 100vw;
+            cursor: pointer; /* Indica que el usuario puede interactuar */
+        }
+        header {
+            grid-area: header;
+            background: #222;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+        nav {
+            grid-area: sidebar;
+            background: #444;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 18px;
+        }
+        main {
+            grid-area: content;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        main h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        main p {
+            font-size: 18px;
+            max-width: 800px;
+            line-height: 1.5;
+        }
+        footer {
+            grid-area: footer;
+            background: #222;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>El Impacto de los Videojuegos</h1>
+    </header>
+    <nav>
+        <a href="#">Historia</a>
+        <a href="#">Impacto Social</a>
+        <a href="#">Arte y Diseño</a>
+        <a href="#">Música</a>
+        <a href="#">Narrativa</a>
+    </nav>
+    <main>
+        <h2>Los Videojuegos en la Sociedad</h2>
+        <p>Los videojuegos han transformado la cultura y el entretenimiento en todo el mundo. Desde sus inicios hasta la actualidad, han influenciado el arte, la música y la educación.</p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Videojuegos Web</p>
+    </footer>
+
+    <!-- Audio de fondo -->
+    <audio id="bgAudio" loop>
+        <source src="audio/remember_me.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        document.body.addEventListener("click", function () {
+            const audio = document.getElementById("bgAudio");
+            if (audio.paused) {
+                audio.play();
+            }
+        }, { once: true }); // Solo se ejecuta una vez
+    </script>
+</body>
+</html>
